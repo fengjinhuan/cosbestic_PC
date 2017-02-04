@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://localhost/PC/statics/js/jquery.min.js"></script>
+	<script src="http://localhost/PC/statics/js/jquery.transit.js"></script>
+	<script src="http://localhost/PC/statics/js/index.js"></script>
+</head>
+<link rel="stylesheet" href="http://localhost/PC/statics/css/init.css">
+<body>
+	<!-- 头部  -->
+	<header>
+		<nav>
+		<a  class="index_a" href="http://localhost/PC" style="float: left;">	
+			<div class="logo">
+			</div>
+		</a>
+		<div class="sec_box">
+			<a href="http://localhost/PC">
+				<dl>
+					<dt>首页</dt>
+					<dd>HOME</dd>
+				</dl>
+			</a>
+		</div>	
+				 		<div class="sec_box">
+			<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=9"  class="sec_nav">
+				<dl>
+					<dt>关于我们</dt>
+					<dd>
+						BUOUT						<!--<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=30)</i>
+  'catid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'9'</font> <i>(length=1)</i>
+  'siteid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'modelid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'parentid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'arrparentid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'child' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'arrchildid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'9,13,14'</font> <i>(length=7)</i>
+  'catname' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'关于我们'</font> <i>(length=12)</i>
+  'style' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'image' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'description' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'parentdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'catdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'BUOUT'</font> <i>(length=5)</i>
+  'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'http://localhost/PC/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=9'</font> <i>(length=63)</i>
+  'items' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'hits' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'setting' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'array (&#10;  &#39;workflowid&#39; =&gt; &#39;&#39;,&#10;  &#39;ishtml&#39; =&gt; &#39;0&#39;,&#10;  &#39;content_ishtml&#39; =&gt; &#39;0&#39;,&#10;  &#39;create_to_html_root&#39; =&gt; &#39;0&#39;,&#10;  &#39;template_list&#39; =&gt; &#39;default&#39;,&#10;  &#39;category_template&#39; =&gt; &#39;category_guanyuwomen&#39;,&#10;  &#39;list_template&#39; =&gt; &#39;&#39;,&#10;  &#39;show_template&#39; =&gt; &#39;show&#39;,&#10;  &#39;meta_title&#39; =&gt; &#39;&#39;,&#10;  &#39;meta_keywords&#39; =&gt; &#39;&#39;,&#10;  &#39;meta_description&#39; =&gt; &#39;&#39;,&#10;  &#39;presentpoint&#39; =&gt; &#39;1&#39;,&#10;  &#39;defaultchargepoint&#39; =&gt; &#39;0&#39;,&#10;  &#39;paytype&#39; =&gt; &#39;0&#39;,&#10;  &#39;repeatchargedays&#39; =&gt; &#39;1&#39;,&#10;  &#39;category_ruleid&#39; =&gt; &#39;6&#39;,&#10;  &#39;show_ruleid&#39; =&gt; &#39;16&#39;,&#10;)'</font> <i>(length=477)</i>
+  'listorder' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'9'</font> <i>(length=1)</i>
+  'ismenu' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'sethtml' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'letter' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'guanyuwomen'</font> <i>(length=11)</i>
+  'usable_type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'create_to_html_root' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'ishtml' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'content_ishtml' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'category_ruleid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'6'</font> <i>(length=1)</i>
+  'show_ruleid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'16'</font> <i>(length=2)</i>
+  'workflowid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'isdomain' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+</pre>-->
+					</dd>
+				</dl>
+			</a>
+			<div class="show_nav">
+						<div class="nav_left">
+							<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=13">公司简介</a>
+							<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=14">招贤纳士</a>
+						</div>
+						<div class="nav_right"></div>
+			</div>
+		</div>	
+				<div class="sec_box">
+			<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=10"  class="sec_nav">
+				<dl>
+					<dt>业务介绍</dt>
+					<dd>
+						BUSINESS						<!--<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=30)</i>
+  'catid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'10'</font> <i>(length=2)</i>
+  'siteid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'modelid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'parentid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'arrparentid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'child' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'arrchildid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'10,15,16,17,18'</font> <i>(length=14)</i>
+  'catname' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'业务介绍'</font> <i>(length=12)</i>
+  'style' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'image' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'description' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'parentdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'catdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'BUSINESS'</font> <i>(length=8)</i>
+  'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'http://localhost/PC/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=10'</font> <i>(length=64)</i>
+  'items' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'hits' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'setting' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'array (&#10;  &#39;workflowid&#39; =&gt; &#39;&#39;,&#10;  &#39;ishtml&#39; =&gt; &#39;0&#39;,&#10;  &#39;content_ishtml&#39; =&gt; &#39;0&#39;,&#10;  &#39;create_to_html_root&#39; =&gt; &#39;0&#39;,&#10;  &#39;template_list&#39; =&gt; &#39;default&#39;,&#10;  &#39;category_template&#39; =&gt; &#39;category_yewujiesao&#39;,&#10;  &#39;list_template&#39; =&gt; &#39;list_yewujiesao&#39;,&#10;  &#39;show_template&#39; =&gt; &#39;show&#39;,&#10;  &#39;meta_title&#39; =&gt; &#39;&#39;,&#10;  &#39;meta_keywords&#39; =&gt; &#39;&#39;,&#10;  &#39;meta_description&#39; =&gt; &#39;&#39;,&#10;  &#39;presentpoint&#39; =&gt; &#39;1&#39;,&#10;  &#39;defaultchargepoint&#39; =&gt; &#39;0&#39;,&#10;  &#39;paytype&#39; =&gt; &#39;0&#39;,&#10;  &#39;repeatchargedays&#39; =&gt; &#39;1&#39;,&#10;  &#39;category_ruleid&#39; =&gt; &#39;6&#39;,&#10;  &#39;show_ruleid&#39; =&gt; &#39;16&#39;,&#10;)'</font> <i>(length=491)</i>
+  'listorder' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'10'</font> <i>(length=2)</i>
+  'ismenu' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'sethtml' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'letter' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'yewujieshao'</font> <i>(length=11)</i>
+  'usable_type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'create_to_html_root' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'ishtml' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'content_ishtml' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'category_ruleid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'6'</font> <i>(length=1)</i>
+  'show_ruleid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'16'</font> <i>(length=2)</i>
+  'workflowid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'isdomain' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+</pre>-->
+					</dd>
+				</dl>
+			</a>
+			<div class="show_nav">
+						<div class="nav_left">
+							<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=13">公司简介</a>
+							<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=14">招贤纳士</a>
+						</div>
+						<div class="nav_right"></div>
+			</div>
+		</div>	
+				<div class="sec_box">
+			<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=11"  class="sec_nav">
+				<dl>
+					<dt>问题解答</dt>
+					<dd>
+						ASKED						<!--<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=30)</i>
+  'catid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'11'</font> <i>(length=2)</i>
+  'siteid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'modelid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'parentid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'arrparentid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'child' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'arrchildid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'11'</font> <i>(length=2)</i>
+  'catname' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'问题解答'</font> <i>(length=12)</i>
+  'style' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'image' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'description' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'parentdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'catdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'ASKED'</font> <i>(length=5)</i>
+  'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'http://localhost/PC/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=11'</font> <i>(length=64)</i>
+  'items' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'7'</font> <i>(length=1)</i>
+  'hits' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'setting' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'array (&#10;  &#39;workflowid&#39; =&gt; &#39;&#39;,&#10;  &#39;ishtml&#39; =&gt; &#39;0&#39;,&#10;  &#39;content_ishtml&#39; =&gt; &#39;0&#39;,&#10;  &#39;create_to_html_root&#39; =&gt; &#39;0&#39;,&#10;  &#39;template_list&#39; =&gt; &#39;default&#39;,&#10;  &#39;category_template&#39; =&gt; &#39;category_xxxwentijieda&#39;,&#10;  &#39;list_template&#39; =&gt; &#39;list_xxxwentijieda&#39;,&#10;  &#39;show_template&#39; =&gt; &#39;show_xxxwentijieda&#39;,&#10;  &#39;meta_title&#39; =&gt; &#39;&#39;,&#10;  &#39;meta_keywords&#39; =&gt; &#39;&#39;,&#10;  &#39;meta_description&#39; =&gt; &#39;&#39;,&#10;  &#39;presentpoint&#39; =&gt; &#39;1&#39;,&#10;  &#39;defaultchargepoint&#39; =&gt; &#39;0&#39;,&#10;  &#39;paytype&#39; =&gt; &#39;0&#39;,&#10;  &#39;repeatchargedays&#39; =&gt; &#39;1&#39;,&#10;  &#39;category_ruleid&#39; =&gt; &#39;6&#39;,&#10;  &#39;show_ruleid&#39; =&gt; &#39;16&#39;,&#10;)'</font> <i>(length=511)</i>
+  'listorder' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'11'</font> <i>(length=2)</i>
+  'ismenu' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'sethtml' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'letter' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'wentijieda'</font> <i>(length=10)</i>
+  'usable_type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'create_to_html_root' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'ishtml' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'content_ishtml' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'category_ruleid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'6'</font> <i>(length=1)</i>
+  'show_ruleid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'16'</font> <i>(length=2)</i>
+  'workflowid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'isdomain' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+</pre>-->
+					</dd>
+				</dl>
+			</a>
+			<div class="show_nav">
+						<div class="nav_left">
+							<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=13">公司简介</a>
+							<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=14">招贤纳士</a>
+						</div>
+						<div class="nav_right"></div>
+			</div>
+		</div>	
+				<div class="sec_box">
+			<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=12"  class="sec_nav">
+				<dl>
+					<dt>联系我们</dt>
+					<dd>
+						CONTACT						<!--<pre class='xdebug-var-dump' dir='ltr'>
+<b>array</b> <i>(size=30)</i>
+  'catid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'12'</font> <i>(length=2)</i>
+  'siteid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'modelid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'parentid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'arrparentid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'child' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'arrchildid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'12'</font> <i>(length=2)</i>
+  'catname' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'联系我们'</font> <i>(length=12)</i>
+  'style' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'image' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'description' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'parentdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'catdir' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'CONTACT'</font> <i>(length=7)</i>
+  'url' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'http://localhost/PC/index.php?m=content&amp;c=index&amp;a=lists&amp;catid=12'</font> <i>(length=64)</i>
+  'items' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'hits' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'setting' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'array (&#10;  &#39;workflowid&#39; =&gt; &#39;&#39;,&#10;  &#39;ishtml&#39; =&gt; &#39;0&#39;,&#10;  &#39;content_ishtml&#39; =&gt; &#39;0&#39;,&#10;  &#39;create_to_html_root&#39; =&gt; &#39;0&#39;,&#10;  &#39;template_list&#39; =&gt; &#39;default&#39;,&#10;  &#39;category_template&#39; =&gt; &#39;category_lianxiwomen&#39;,&#10;  &#39;list_template&#39; =&gt; &#39;list_lianxiwomen&#39;,&#10;  &#39;show_template&#39; =&gt; &#39;show&#39;,&#10;  &#39;meta_title&#39; =&gt; &#39;&#39;,&#10;  &#39;meta_keywords&#39; =&gt; &#39;&#39;,&#10;  &#39;meta_description&#39; =&gt; &#39;&#39;,&#10;  &#39;presentpoint&#39; =&gt; &#39;1&#39;,&#10;  &#39;defaultchargepoint&#39; =&gt; &#39;0&#39;,&#10;  &#39;paytype&#39; =&gt; &#39;0&#39;,&#10;  &#39;repeatchargedays&#39; =&gt; &#39;1&#39;,&#10;  &#39;category_ruleid&#39; =&gt; &#39;6&#39;,&#10;  &#39;show_ruleid&#39; =&gt; &#39;16&#39;,&#10;)'</font> <i>(length=493)</i>
+  'listorder' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'12'</font> <i>(length=2)</i>
+  'ismenu' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'1'</font> <i>(length=1)</i>
+  'sethtml' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'letter' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'lianxiwomen'</font> <i>(length=11)</i>
+  'usable_type' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'create_to_html_root' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'ishtml' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'content_ishtml' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+  'category_ruleid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'6'</font> <i>(length=1)</i>
+  'show_ruleid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'16'</font> <i>(length=2)</i>
+  'workflowid' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>''</font> <i>(length=0)</i>
+  'isdomain' <font color='#888a85'>=&gt;</font> <small>string</small> <font color='#cc0000'>'0'</font> <i>(length=1)</i>
+</pre>-->
+					</dd>
+				</dl>
+			</a>
+			<div class="show_nav">
+						<div class="nav_left">
+							<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=13">公司简介</a>
+							<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=14">招贤纳士</a>
+						</div>
+						<div class="nav_right"></div>
+			</div>
+		</div>	
+		        	
+		<div class="head_right">
+			<a href="#">中文版</a>
+			<a href="#">Eenlish</a>
+		</div>
+		</nav>
+		
+	</header><link rel="stylesheet" href="http://localhost/PC/statics/css/index.css">
+	<!-- banner开始 -->
+	<div class="banner">
+		<div class="img_con">
+			<a href="#" class="img_list" style="z-index: 2"><img src="http://localhost/PC/statics/images/images/banner.jpg" alt=""></a>
+			<a href="#" class="img_list"><img src="http://localhost/PC/statics/images/images/banner.jpg" alt=""></a>
+			<a href="#" class="img_list"><img src="http://localhost/PC/statics/images/images/banner.jpg" alt=""></a>
+			<a href="#" class="img_list"><img src="http://localhost/PC/statics/images/images/banner.jpg" alt=""></a>
+		</div>
+		<div class="banner_img">
+			<div class="banner_left"></div>
+			<div class="banner_right"></div>
+			<!-- 文字定位 -->
+			<div class="banner_span">
+				<div class="banner_tit"></div>
+				<div class="banner_con"></div>
+				<div class="line"></div>
+				<a href="#" class="banner_more">
+					了解更多
+				</a>
+			</div>
+			<div class="banner_btn">
+				<div class="btn btn_active"></div>
+				<div class="btn"></div>
+				<div class="btn"></div>
+				<div class="btn"></div>
+			</div>
+		</div>
+	</div>
+	<!-- banner结束 -->
+	<!-- 主营业务 -->
+	<section class="s1">
+		<h1>主营业务<span></span></h1>
+		<div class="show">
+			<dl class="d1">
+				<dt>01</dt>
+				<div class="show_border"></div>
+				<h2>进口非特殊类化妆品备案</h2>
+				<dd>Imports of non-special cosmetics for the record</dd>
+				<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=15">查看详情 ></a>
+			</dl>
+			<dl class="d2">
+				<dt>02</dt>
+				<div class="show_border"></div>
+				<h2>进口特殊类化妆品备案</h2>
+				<dd>Imported special cosmetics for  the record</dd>
+				<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=15">查看详情 ></a>
+			</dl>
+			<dl class="d3">
+				<dt>03</dt>
+				<div class="show_border"></div>
+				<h2>国产特殊类化妆品备案</h2>
+				<dd>Domestic special cosmetics for the record</dd>
+				<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=15">查看详情 ></a>
+			</dl>
+			<dl class="d4">
+				<dt>04</dt>
+				<div class="show_border"></div>
+				<h2>国产非特殊类化妆品备案</h2>
+				<dd>Domestic non-special cosmetics for the record</dd>
+				<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=15">查看详情 ></a>
+			</dl>
+		</div>
+	</section>
+	<!-- 成功案例 -->
+	<div class="box">
+		<section class="s2">
+			<h1>主营业务<span></span></h1>
+			<div class="s2_img">
+				<a href="#" class="ss1"><img src="http://localhost/PC/statics/images/images/s1.png" alt=""></a>
+				<a href="#" class="ss2"><img src="http://localhost/PC/statics/images/images/s2.png" alt=""></a>
+				<a href="#" class="ss3"><img src="http://localhost/PC/statics/images/images/s3.png" alt=""></a>
+				<a href="#"  class="ss4"><img src="http://localhost/PC/statics/images/images/s4.png" alt=""></a>
+				<a href="#" class="ss5"><img src="http://localhost/PC/statics/images/images/s5.png" alt=""></a>
+				<a href="#" class="ss6"><img src="http://localhost/PC/statics/images/images/s6.png" alt=""></a>
+				<a href="#" class="ss7"><img src="http://localhost/PC/statics/images/images/s7.jpg" alt=""></a>
+				<a href="#" class="ss8"><img src="http://localhost/PC/statics/images/images/s8.png" alt=""></a>
+				<a href="#"  class="ss9"><img src="http://localhost/PC/statics/images/images/s9.png" alt=""></a>
+				<a href="#" class="ss10"><img src="http://localhost/PC/statics/images/images/s10.png" alt=""></a>
+				<a href="#" class="ss11"><img src="http://localhost/PC/statics/images/images/s11.png" alt=""></a>
+			</div>
+			<a href="#" class="s2_more">查看更多 ></a>
+		</section>
+	</div>
+	
+	<!-- 底部 -->
+	<footer>
+		<div class="friends">
+			<a href="http://localhost/PC/index.php?m=content&c=index&a=lists&catid=19">行业资讯</a>  |  
+			<a href="#">政策法规</a>  |
+			<a href="#">  成功案例</a>   |
+			<a href="#">  友情链接</a>
+		</div>
+		<hr>
+		<div class="foot_bottom">
+			<ul> 	
+				<li>地址:北京市海淀区阜成路 58 号新洲商务大厦 601B   </li>
+				<li>业务咨询电话:400-066-9826 ;1365-1069-966</li>
+				<li>京 ICP备 06066175 号-5   Copyright © 2016 
+				<a href="#">北京妆倍佳生物科技有限公司</a>   </li>
+				<li>技术支持：维创科技</li>
+			</ul>
+			<dl>
+					<dt></dt>
+					<dt></dt>
+					<dd>官方微信</dd>
+					<dd style="margin-right:0;">官方微博</dd>
+			</dl>
+		</div>
+	</footer>
+	<!-- 左边定位	 -->
+	<ul class="fix">
+		<li class="fixs"><span></span></li>
+		<li class="fixs"><span></span>
+			<dl class="shows">
+					<dt></dt>
+					<dt></dt>
+					<dd>官方微信</dd>
+					<dd style="margin-right:0;">官方微博</dd>
+			</dl>
+		</li>
+		<li class="fixs totop" style="margin-bottom:0"><span></span>
+		</li>
+
+	</ul>
+</body>
+</html>

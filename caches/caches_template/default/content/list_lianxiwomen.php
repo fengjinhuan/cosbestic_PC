@@ -1,0 +1,71 @@
+<?php defined('IN_PHPCMS') or exit('No permission resources.'); ?><?php include template("content","header"); ?>
+    
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=HUTpGB3lB5vGgjpCag0Gwq07NH2R3pSl"></script>
+<link rel="stylesheet" href="<?php echo CSS_PATH;?>init.css">
+<link rel="stylesheet" href="<?php echo CSS_PATH;?>lianxiwomen.css">
+
+    <div class="sec_banner">
+        <div class="sec_banner_border">
+			成为化妆品进入中国的最理想咨询机构
+			<span>联系我们</span>
+		</div>
+    </div>
+    <div class="con">
+        <!--二级导航-->
+		<div class="con_tit">
+			<div class="con_tit_left">
+				<a href="#">联系我们</a>
+			</div>
+			<div class="con_tit_right">
+				你的当前位置：
+				<a href="<?php echo siteurl($siteid);?>">首页</a>
+				<
+				<a href="#">联系我们</a>	
+			</div>
+		</div>
+        <div class="map">
+           <div style="width:100%;height:100%;border:#ccc solid 1px;font-size:12px" id="map"></div>
+       </div>
+    </div>    
+
+<script>
+   // 地图
+    
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(113.176873,39.425923),7);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+   </script>
+<?php include template("content","footer"); ?>

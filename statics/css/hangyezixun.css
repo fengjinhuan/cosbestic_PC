@@ -1,0 +1,55 @@
+
+.con_tit_left a:nth-child(1){
+    border-color: #E26D10;
+}
+.con_box{
+     margin-top: 43px;
+    width: 100%;height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.list{
+    cursor: pointer;
+    width:315px;height: 370px;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    padding: 13px;color: #666666;
+    margin-bottom: 40px;
+}
+.list:hover{
+    background: #E26D10;
+}
+.list:hover h1{color: #FAEFE8;} 
+.list:hover p{color: #FAEFE8;} 
+.list:hover span{color: #FAEFE8;} 
+.img{
+    height: 188px;width: 100%;
+    background: url(../images/images/ban1.png)no-repeat;
+    background-size: cover;
+}
+.span_box{
+    margin-top: 10px;
+    height: 150px;
+    overflow: hidden;
+}
+.span_box h1{
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.span_box span{
+    font-size: 14px;
+    line-height: 40px;
+}
+.span_box p{
+    line-height: 30px;
+}
+.button a{
+    margin: 0 10px;
+    color: #AAAAAA;
+}
+.button a:hover{
+    color: #343434;
+}

@@ -1,0 +1,57 @@
+.con_box{
+    height: 700px;width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 60px 0 30px;
+}
+.con_list{
+    height: 154px;width: 320px;
+    border: 1px solid #E7E7E7;
+    background:no-repeat center;
+    background-size: 100px;
+}
+.con_list:nth-child(1){
+    background-image:  url(../images/images/s1.png) ;
+}
+.con_list:nth-child(2){
+    background-image:  url(../images/images/s2.png) ;
+}
+.con_list:nth-child(3){
+    background-image:  url(../images/images/s3.png) ;
+}
+.con_list:nth-child(4){
+    background-image:  url(../images/images/s4.png) ;
+}
+.con_list:nth-child(5){
+    background-image:  url(../images/images/s5.png) ;
+}
+.con_list:nth-child(6){
+    background-image:  url(../images/images/s6.png) ;
+}
+.con_list:nth-child(7){
+    background-image:  url(../images/images/s7.jpg) ;
+}
+.con_list:nth-child(8){
+    background-image:  url(../images/images/s8.png) ;
+}
+.con_list:nth-child(9){
+    background-image:  url(../images/images/s9.png) ;
+}
+.con_list:nth-child(10){
+    background-image:  url(../images/images/s10.png) ;
+}
+.con_list:nth-child(11){
+    background-image:  url(../images/images/s11.png) ;
+}
+.con_list:nth-child(12){
+    background-image:  url(../images/images/s2.png) ;
+}
+
+.button a{
+    margin: 0 10px;
+    color: #AAAAAA;
+}
+.button a:hover{
+    color: #343434;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<link rel="stylesheet" href="{CSS_PATH}init.css">
+<body>
+	<!-- 头部  -->
+	<header>
+		<nav>
+		<a  class="index_a" href="{siteurl($siteid)}" style="float: left;">	
+			<div class="logo">
+			</div>
+		</a>
+		<div class="sec_box">
+			<a href="{siteurl($siteid)}">
+				<dl>
+					<dt>首页</dt>
+					<dd>HOME</dd>
+				</dl>
+			</a>
+		</div>	
+		{pc:content action="category" catid="0" num="4" siteid="$siteid" order="listorder ASC"}
+		 {loop $data $v}
+		<div class="sec_box">
+			<a href="{$v[url]}"  class="sec_nav">
+				<dl>
+					<dt>{$v[catname]}</dt>
+					<dd>
+						{$v[catdir]}
+						<!--{php var_dump($v)}-->
+					</dd>
+				</dl>
+			</a>
+			<div class="show_nav">
+						<div class="nav_left">
+							<a href="{$CATEGORYS[13][url]}">公司简介</a>
+							<a href="{$CATEGORYS[14][url]}">招贤纳士</a>
+						</div>
+						<div class="nav_right"></div>
+			</div>
+		</div>	
+		{/loop}
+        {/pc}	
+		<div class="head_right">
+			<a href="#">中文版</a>
+			<a href="#">Eenlish</a>
+		</div>
+		</nav>
+		
+	</header>
